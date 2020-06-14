@@ -1,13 +1,17 @@
 <template>
   <div class="app">
-   <p>hello</p>
-    <!-- 
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> 
-     <router-view/>
-    </div>
-    -->
+    <Header></Header>
+    <Swiper></Swiper>
   </div>
 </template>
+<script>
+  import Header from '@/components/home/header.vue'
+  import Swiper from '@/components/home/swiper.vue'
+  export default {
+      components: {
+        Header,
+        Swiper
+      }
+  }
+</script>
 
