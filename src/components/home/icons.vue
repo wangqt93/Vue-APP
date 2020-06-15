@@ -92,14 +92,12 @@
 </script>
 <style scoped>
     .swiper-container {
-        height: 19rem;
+        height: 15rem;
         margin-top: 1rem; 
-        border-bottom: 1px solid #eee;
     }
     .swiper-wrapper {
         height: 16rem;
         margin: 1rem 0; 
-        
     }
     .swiper-wrapper .icons {
         float: left;

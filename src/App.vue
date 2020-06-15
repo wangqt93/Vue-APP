@@ -1,20 +1,15 @@
 <template>
   <div class="app">
-    <Header></Header>
-    <Swiper></Swiper>
-    <Icons></Icons>
+    <Home></Home>
   </div>
 </template>
 <script>
-  import Header from '@/components/home/header.vue'
-  import Swiper from '@/components/home/swiper.vue'
-  import Icons from '@/components/home/icons.vue'
+  import Home from '@/components/home/home.vue'
+
 
   export default {
       components: {
-        Header,
-        Swiper,
-        Icons
+        Home,
       }
   }
 </script>

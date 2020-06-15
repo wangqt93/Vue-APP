@@ -13,6 +13,8 @@
         swiperOptions: {
           pagination: {   //设置分页器（小圆点）
             el: '.swiper-pagination',
+            observer: true,
+            observeParents: true,
           },
         },
         arr: [

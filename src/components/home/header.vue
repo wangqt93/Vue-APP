@@ -9,7 +9,7 @@
         <div class='iconfont icon-bottom'>北京</div>
     </header>
 </template>
-<style>
+<style scoped>
     header {
         display: flex;
         justify-content: space-around;
