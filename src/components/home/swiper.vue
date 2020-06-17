@@ -1,13 +1,14 @@
 <template>
   <swiper ref="mySwiper" :options="swiperOptions">
-    <swiper-slide v-for='i in arr'>
-      <img :src="i.imgurl" alt="">
+    <swiper-slide v-for='i in swiperList'>
+      <img :src="i.imgUrl" alt="">
     </swiper-slide>
     <div class="swiper-pagination" slot="pagination"></div>
   </swiper>
 </template>
 <script>
   export default {
+    props: ['swiperList'],
     data(){
       return {
         swiperOptions: {
@@ -17,24 +18,7 @@
             observeParents: true,
           },
         },
-        arr: [
-          {
-            id: 0,
-            imgurl: require('@/assets/img/swiper1.jpg')
-          },
-          {
-            id: 1,
-            imgurl: require('@/assets/img/swiper2.jpg')
-          },
-          {
-            id:2,
-            imgurl: require('@/assets/img/swiper3.jpg')
-          },
-          {
-            id:3,
-            imgurl: require('@/assets/img/swiper4.jpg')
-          }
-        ]
+
       }
     }
   }

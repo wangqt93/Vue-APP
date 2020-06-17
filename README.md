@@ -1,29 +1,21 @@
-# demo
+步骤一：样式初始化
+css样式初始化，引入reset.css
 
-## Project setup
-```
-yarn install
-```
+步骤二：移动端click300毫秒点击延迟
+1.引入淘宝移动端的 移动端适配
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+2.安装FastClick
+cnpm i fastclick --save
+//在main.js中import 
+import FastClick from 'fastclick'
+FastClick.attach(document.body)
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+步骤三：组件header
+flex/positon/字体图标
 
-### Compiles and minifies for production
-```
-yarn run build
-```
+步骤四：swiper组件
+安装，使用swiper插件
 
-### Run your tests
-```
-yarn run test
-```
+..........
 
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+mock数据，父组件Home，模拟一次性得到所有子组件数据

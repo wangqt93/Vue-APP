@@ -1,16 +1,11 @@
 <template>
   <div class="app">
-    <Home></Home>
+    <keep-alive>
+   		<router-view></router-view>
+    </keep-alive>
   </div>
 </template>
 <script>
-  import Home from '@/components/home/home.vue'
 
-
-  export default {
-      components: {
-        Home,
-      }
-  }
 </script>
 

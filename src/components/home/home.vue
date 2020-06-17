@@ -1,12 +1,12 @@
 <template>
     <div class="home">
         <Header></Header>
-        <Swiper></Swiper>
-        <Icons></Icons>
+        <Swiper :swiperList='swiperList'></Swiper>
+        <Icons :iconsList='iconsList'></Icons>
         <Location></Location>
         <Active></Active>
-        <Hot></Hot>
-        <Like></Like>
+        <Hot :hotList='hotList'></Hot>
+        <Like :likeList='likeList'></Like>
     </div>
 </template>
 <script>
@@ -26,6 +26,25 @@
         Active,
         Hot,
         Like
+      },
+      data(){
+        return {
+          swiperList: [],
+          iconsList: [],
+          hotList: [],
+          likeList: []
+        }
+      },
+
+      mounted(){
+        this.$http.get('http://localhost:8080/mock/dataHome.json')
+          .then((res)=>{
+            let data = res.data.data[0]
+            this.swiperList = data.swiperList
+            this.iconsList = data.iconsList
+            this.hotList = data.hotList
+            this.likeList = data.likeList
+          })
       }
   }
 

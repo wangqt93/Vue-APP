@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-
+import Home from '@/components/home/home.vue'
+import City from '@/components/city/City.vue'
 
 Vue.use(VueRouter)
 
@@ -18,6 +19,16 @@ Vue.use(VueRouter)
   //   // which is lazy-loaded when the route is visited.
   //   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   // }
+      {
+        path: '/',
+        component: Home
+      },
+      {
+        path: '/city',
+        component: City
+      }
+
+
 ]
 
 const router = new VueRouter({

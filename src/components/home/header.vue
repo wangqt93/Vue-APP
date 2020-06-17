@@ -5,8 +5,12 @@
             <div class='iconfont icon-search'></div>
             <input type="text" value='' placeholder='输入城市/景点/游玩主题'>
         </div>
+        <router-link to='/city'>
+            <div class='iconfont icon-bottom'>北京</div>
+        </router-link>
 
-        <div class='iconfont icon-bottom'>北京</div>
+        
+        
     </header>
 </template>
 <style scoped>
