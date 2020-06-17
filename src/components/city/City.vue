@@ -1,7 +1,7 @@
 <template>
 	<div class='city'>
-		<CityHeader :hotCities='hotCities'></CityHeader>
-		</CityList :cities='cities'></CityList>
+		<CityHeader></CityHeader>
+		<CityList :hotCities='hotCities' :cities='cities'></CityList>
 	</div>
 </template>
 
@@ -20,7 +20,7 @@ export default {
 		}
 	},
 	mounted(){
-		this.$http.get('/api/city.json')
+		this.$http.get('http://localhost:8080/mock/city.json')
 		.then((res)=>{
 			let data = res.data.data;
 			this.hotCities=data.hotCities;

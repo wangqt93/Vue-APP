@@ -12,21 +12,22 @@
         height: 4.5rem;
         background: #00bcd4;
 		position: relative;
+		
     }
-	.iconfont {
+	.header div {
+		color: #fff;
 		position: absolute;
 		top: 50%;
+		font-size: 2rem;
+	}
+	.iconfont {
 		left: 1rem;
 		transform: translateY(-50%);
-		font-size: 2rem;
-
+		font-weight: 600;
 	}
 	.header-title {
-		position: absolute;
-		top: 50%;
 		left: 50%;
 		transform: translate(-50%,-50%);
-		font-size: 1.8rem;
 	}
 </style>
 <script type="text/javascript">
