@@ -1,20 +1,25 @@
 <template>
 	<div class='header'>
-		<router-link to='/'>
-			<div class='iconfont icon-left' ></div>
-		</router-link>
-		<div class='header-title'>城市选择</div>
-
+		<div class='content'>
+			<router-link to='/'>
+				<div class='iconfont icon-left' ></div>
+			</router-link>
+			<div class='header-title'>城市选择</div>
+		</div>
 	</div>
 </template>
 <style scoped>
-    .header {
+	.header {
+		height: 4.5rem;
+		width: 100%;
+		
+	}
+    .content {
         height: 4.5rem;
         background: #00bcd4;
-		position: relative;
-		
+		position: relative;	
     }
-	.header div {
+	.content div {
 		color: #fff;
 		position: absolute;
 		top: 50%;

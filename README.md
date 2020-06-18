@@ -19,3 +19,22 @@ flex/positon/字体图标
 ..........
 
 mock数据，父组件Home，模拟一次性得到所有子组件数据
+
+axios 去请求 数据
+cnpm i axios --save
+//main.js
+import axios form 'axios'
+Vue.prototype.$http = axios
+//Home
+mounted(){
+	this.$thhp.get('http://localhost:8080/static/mock/dataHome.json')
+	.then((res)=>{
+		console.log(res)
+	})
+}
+
+
+better-scroll插件
+实现触屏滚动与点击字母跳转对应dom节点
+问题：开发者工具，模拟手机触屏无法滚动页面，
+解决：需要切换到其他型号的模拟手机上，可以解决

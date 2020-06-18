@@ -6,13 +6,22 @@
             <input type="text" value='' placeholder='输入城市/景点/游玩主题'>
         </div>
         <router-link to='/city'>
-            <div class='iconfont icon-bottom'>北京</div>
+            <div class='iconfont icon-bottom'>{{city}}</div>
         </router-link>
 
         
         
     </header>
 </template>
+<script>
+    import {mapState} from 'vuex'
+    export default {
+        computed: {
+            ...mapState(['city'])
+        }
+        
+    }
+</script>
 <style scoped>
     header {
         display: flex;
