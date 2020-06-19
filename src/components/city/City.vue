@@ -22,12 +22,9 @@ export default {
 	mounted(){
 		this.$http.get('http://localhost:8080/mock/city.json')
 		.then((res)=>{
-			
 			let data = res.data.data
-			console.log(data)
 			this.hotCities=data.hotCities
 			this.cities=data.cities
-			console.log(data.cities)
 		})
 	}
 }

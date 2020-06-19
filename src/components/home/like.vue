@@ -5,7 +5,7 @@
             <span>猜你喜欢</span>
         </div>
         <ul>
-            <li v-for='item in likeList'>
+            <li v-for='item in likeList' @click='getDetail(item.title)' ref='title'>
                 <img :src="item.imgUrl" alt="">
                 <div>
                     <h3>{{item.title}}</h3>
@@ -21,7 +21,14 @@
 </template>
 <script>
     export default {
-            props: ['likeList']
+            props: ['likeList'],
+            methods:{
+                getDetail(val){
+                    this.$router.push('/detail')
+                }
+                
+            }
+
     }
 </script>
 <style scoped>

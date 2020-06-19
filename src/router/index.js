@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '@/components/home/home.vue'
 import City from '@/components/city/City.vue'
+import Detail from '@/components/details/detail.vue'
 
 Vue.use(VueRouter)
 
@@ -26,6 +27,10 @@ Vue.use(VueRouter)
       {
         path: '/city',
         component: City
+      },
+      {
+        path: '/detail',
+        component: Detail
       }
 
 

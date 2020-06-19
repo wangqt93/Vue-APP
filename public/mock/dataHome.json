@@ -146,15 +146,15 @@
 			"swiperList":[
 				{
 					"id":"01",
-					"imgUrl":"/api/img/swiper1.jpg"
+					"imgUrl":"http://localhost:8080/img/swiper3.jpg"
 				},
 				{
 					"id":"02",
-					"imgUrl":"/api/img/swiper2.jpg"
+					"imgUrl":"http://localhost:8080/img/swiper2.jpg"
 				},
 				{
 					"id":"03",
-					"imgUrl":"/api/img/swiper3.jpg"
+					"imgUrl":"http://localhost:8080/img/swiper1.jpg"
 				}
 			],
 			"iconsList":[
